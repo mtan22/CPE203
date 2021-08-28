@@ -1,0 +1,43 @@
+# WORLD_EVENT.txt : Project 5 Description
+# Priyanka Chandar: CPE 203-05
+# Michelle Tan: CPE 203-01
+
+Note: This is Priyanka's code base; however, emailing the respective files to each other made the program not function correctly, 
+so I am submitting Project 5 on my repository if that is all right.
+
+Include a text file named WORLD_EVENT.txt in your submission that describes:
+
+1) how to trigger the event
+2) what should happen when the event is triggered
+3) what the affected entities should do
+4) what the new entity is and how it should behave
+5) (if applicable) the names of each partner and what each partner was responsible for
+
+
+1) The event is triggered by clicking on the virtual world screen simulation that pops up. There are two clicks.
+2) Click 1:
+        Creates the background rainbow cross (ie. the world-changing event). It also changes miners into
+        angel entities if within vicinity. If the cross is clicked/created upon a blacksmith entity, or other obstacles, the
+        cross will overlay it/cover it up such that it will be as if it doesn't exist. More veins will also appear
+        on random tiles of the virtual world.
+   Click 2:
+        Creates Devil entities.
+   *On odd number clicks, whatever occurs in Click 1 will happen. On even number clicks, whatever occurs in Click 2 will happen.
+3) Miners will become Angels. Angel entities will pick up ore faster than miners do. Angels will also hunt and
+   kill the Devils once they appear.
+4) The new entity is the Devil. As Devils are the enemies of the Angels,
+   they work to help the Angel's enemy OreBlobs (ie. the enemy of my enemy is my friend).
+   It acts in a manner similar to the OreBlobs, except faster/better at destroying veins.
+5) Priyanka Chandar and Michelle Tan: We both worked on the project collaboratively over zoom.
+   Michelle made the Angel class and Priyanka made the Devil class. We worked together on the virtual world implementations
+   and the edits made to Background and Factory classes. 
+
+
+
+
+
+
+
+
+
+

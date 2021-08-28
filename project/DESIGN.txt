@@ -1,0 +1,30 @@
+regrade:
+
+* updated program code to change public variables to private variables, respectively
+
+* updated UML diagram with these variable type changes
+
+Michelle Tan - CPE 203 - Project 1
+
+Various Functions Explained:
+
+scheduleActions() - I placed scheduleActions() in Entity.java because the original method takes in an Entity object and implements
+the object's attributes in many of the methods that scheduleActions() call since these methods are also in the Entity class.
+
+executeAnimationAction() - I placed executeAnimationAction() in Action.java because the original method takes in a Action object 
+and refers to the object's attributes (like this.entity).
+
+parseBackground(), parseMiner(), parseObstacle(), parseOre(), parseSmith(), parseVein() - I placed these methods in WorldModel.java
+because they seem to create objects/settings that exist in the game (WorldModel class is making the "model" of the game world).
+
+updateOnTime() - I placed updateOnTime() in EventScheduler.java because this class deals with event organization, and time is related
+to event scheduling. In addition, the original method takes in an EventScheduler object, and implements EventScheduler's attributes
+through the methods updateOnTime() calls.
+
+loadImages() - I placed loadImages() in VirtualWorld.java because VirtualWorld.java creates the colors/display of the game world.
+Although loadImages() uses an ImageStore object as a parameter, I found it more fitting to place the method in VirtualWorld.java
+because loadImages() exhibits the images on the game screen. 
+
+In conclusion, I made decisions to place methods in various classes because they utilized certain class objects and attributes in the
+function code. Apart from this reason, my other rationale was to move methods in certain classes because their primary functionality 
+fit the key "intent" of the class.
